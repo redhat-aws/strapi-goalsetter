@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tech_trees",
+  "info": {
+    "singularName": "tech-tree",
+    "pluralName": "tech-trees",
+    "displayName": "TechTree",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "taxonomy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::taxonomy.taxonomy"
+    },
+    "start": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tech-tree-decision-point.tech-tree-decision-point"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

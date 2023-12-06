@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "equippableModifier": {
+      "type": "json"
+    },
+    "nonEquippableModifier": {
+      "type": "json"
+    },
+    "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "equippedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "flavorText": {
+      "type": "text"
+    },
+    "cardType": {
+      "type": "enumeration",
+      "enum": [
+        "monster",
+        "hero",
+        "quest"
+      ]
+    },
+    "rarity": {
+      "type": "enumeration",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "legendary"
+      ]
+    },
+    "specialAbilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::special-ability.special-ability"
+    },
+    "asset": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asset.asset"
+    },
+    "uuid": {
+      "type": "uid"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "self",
+        "opponent"
+      ]
+    },
+    "nftAddress": {
+      "type": "string"
+    },
+    "equipmentModifierType": {
+      "type": "string"
+    },
+    "lhEquipmentModifierType": {
+      "type": "string"
+    },
+    "rhEquipmentModifierType": {
+      "type": "string"
+    },
+    "attributes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attribute.attribute"
+    },
+    "taxonomy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::taxonomy.taxonomy"
+    },
+    "attributeSpecialAbilityTaxonomies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attribute-special-ability-taxonomy.attribute-special-ability-taxonomy"
+    }
+  }
+}

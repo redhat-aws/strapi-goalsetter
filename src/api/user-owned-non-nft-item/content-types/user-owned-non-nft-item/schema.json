@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_owned_non_nft_items",
+  "info": {
+    "singularName": "user-owned-non-nft-item",
+    "pluralName": "user-owned-non-nft-items",
+    "displayName": "UserOwnedNonNFTItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    }
+  }
+}

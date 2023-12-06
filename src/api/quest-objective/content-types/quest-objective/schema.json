@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quest_objectives",
+  "info": {
+    "singularName": "quest-objective",
+    "pluralName": "quest-objectives",
+    "displayName": "QuestObjective",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "completed": {
+      "type": "boolean"
+    },
+    "flavorText": {
+      "type": "text"
+    },
+    "monsterQuest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::monster-quest.monster-quest"
+    },
+    "itemQuest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-quest.item-quest"
+    },
+    "roomQuest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::room-quest.room-quest"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

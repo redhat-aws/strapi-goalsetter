@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "taxonomies",
+  "info": {
+    "singularName": "taxonomy",
+    "pluralName": "taxonomies",
+    "displayName": "Taxonomy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

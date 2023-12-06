@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attribute_taxonomies",
+  "info": {
+    "singularName": "attribute-taxonomy",
+    "pluralName": "attribute-taxonomies",
+    "displayName": "AttributeTaxonomy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "attribute": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::attribute.attribute"
+    },
+    "taxonomy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::taxonomy.taxonomy"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monster_rooms",
+  "info": {
+    "singularName": "monster-room",
+    "pluralName": "monster-rooms",
+    "displayName": "Monster Room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lootOverride": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::loot.loot"
+    },
+    "monster": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::monster.monster"
+    },
+    "monsterHand": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lootRoomType": {
+      "type": "string"
+    }
+  }
+}

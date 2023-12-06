@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quests",
+  "info": {
+    "singularName": "quest",
+    "pluralName": "quests",
+    "displayName": "Quest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "flavorText": {
+      "type": "text"
+    },
+    "loot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::loot.loot"
+    },
+    "objectives": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quest-objective.quest-objective"
+    },
+    "start": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::decision-point.decision-point"
+    },
+    "questImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "likesAmount": {
+      "type": "integer"
+    },
+    "downloadsAmount": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deck": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::deck.deck"
+    }
+  }
+}

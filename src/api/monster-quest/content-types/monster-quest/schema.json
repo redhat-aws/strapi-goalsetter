@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monster_quests",
+  "info": {
+    "singularName": "monster-quest",
+    "pluralName": "monster-quests",
+    "displayName": "Monster Quest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "count": {
+      "type": "integer"
+    },
+    "monster": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::monster.monster"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

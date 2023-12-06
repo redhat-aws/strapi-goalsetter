@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puzzle_assets",
+  "info": {
+    "singularName": "puzzle-asset",
+    "pluralName": "puzzle-assets",
+    "displayName": "PuzzleAsset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "createDate": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "asset": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asset.asset"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "player_stats",
+  "info": {
+    "singularName": "player-stat",
+    "pluralName": "player-stats",
+    "displayName": "PlayerStat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contiguousRooms": {
+      "type": "biginteger"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "cardsEarned": {
+      "type": "biginteger"
+    },
+    "crystalsSpent": {
+      "type": "biginteger"
+    },
+    "earnedEXP": {
+      "type": "biginteger"
+    },
+    "averageDieRoll": {
+      "type": "integer"
+    },
+    "killedBy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::monster.monster"
+    },
+    "character": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::character.character"
+    }
+  }
+}

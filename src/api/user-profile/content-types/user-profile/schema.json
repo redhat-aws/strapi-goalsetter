@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profiles",
+  "info": {
+    "singularName": "user-profile",
+    "pluralName": "user-profiles",
+    "displayName": "UserProfile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keycloaksubject": {
+      "type": "string"
+    },
+    "roninWalletAddress": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "verifiedTime": {
+      "type": "datetime"
+    },
+    "preferredUsername": {
+      "type": "string"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "emailVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "familyName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "subscriptionStatus": {
+      "type": "string"
+    },
+    "subscriptionExpiresAt": {
+      "type": "date"
+    },
+    "gptAPIQuota": {
+      "type": "integer"
+    },
+    "planTier": {
+      "type": "string"
+    },
+    "gptAPIQuotaRemaining": {
+      "type": "integer"
+    }
+  }
+}

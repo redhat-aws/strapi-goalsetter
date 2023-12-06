@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animations",
+  "info": {
+    "singularName": "animation",
+    "pluralName": "animations",
+    "displayName": "Animation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainAnimation": {
+      "type": "json"
+    },
+    "deathAnimation": {
+      "type": "json"
+    },
+    "idleAnimation": {
+      "type": "json"
+    },
+    "attackAnimation": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

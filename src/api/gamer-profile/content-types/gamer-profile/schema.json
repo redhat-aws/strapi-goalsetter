@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gamer_profiles",
+  "info": {
+    "singularName": "gamer-profile",
+    "pluralName": "gamer-profiles",
+    "displayName": "GamerProfile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "axieCount": {
+      "type": "integer"
+    },
+    "axieLoveCompleted": {
+      "type": "boolean"
+    },
+    "axieLoveCompletedAt": {
+      "type": "datetime"
+    },
+    "axsTotal": {
+      "type": "biginteger"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string",
+      "unique": true
+    },
+    "landItemCount": {
+      "type": "integer"
+    },
+    "landPlotCount": {
+      "type": "integer"
+    },
+    "roninWalletAddress": {
+      "type": "string",
+      "unique": true
+    },
+    "slpTotal": {
+      "type": "biginteger"
+    },
+    "username": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "progress_updates",
+  "info": {
+    "singularName": "progress-update",
+    "pluralName": "progress-updates",
+    "displayName": "ProgressUpdate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notes": {
+      "type": "text"
+    },
+    "noteTime": {
+      "type": "datetime"
+    }
+  }
+}

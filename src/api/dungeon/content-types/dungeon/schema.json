@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dungeons",
+  "info": {
+    "singularName": "dungeon",
+    "pluralName": "dungeons",
+    "displayName": "Dungeon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "knockoutLimit": {
+      "type": "integer"
+    },
+    "rooms": {
+      "type": "json"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bagEquipmentSlot": {
+      "type": "json"
+    },
+    "bothFeetEquipmentSlot": {
+      "type": "json"
+    },
+    "bothHandsEquipmentSlot": {
+      "type": "json"
+    },
+    "headEquipmentSlot": {
+      "type": "json"
+    },
+    "leftFootEquipmentSlot": {
+      "type": "json"
+    },
+    "leftHandEquipmentSlot": {
+      "type": "json"
+    },
+    "rightFootEquipmentSlot": {
+      "type": "json"
+    },
+    "rightHandEquipmentSlot": {
+      "type": "json"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "preferredUsername": {
+      "type": "string"
+    },
+    "testName": {
+      "type": "string"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "earnedEXP": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "spentEXP": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "expBalance": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

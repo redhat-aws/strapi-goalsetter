@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "player_cards",
+  "info": {
+    "singularName": "player-card",
+    "pluralName": "player-cards",
+    "displayName": "PlayerCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "battleUsesRemaining": {
+      "type": "integer"
+    },
+    "card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::card.card"
+    },
+    "dungeonUsesRemaining": {
+      "type": "integer"
+    },
+    "bag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bag.bag"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    }
+  }
+}

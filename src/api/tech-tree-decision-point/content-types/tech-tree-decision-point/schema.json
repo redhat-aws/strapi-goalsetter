@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tech_tree_decision_points",
+  "info": {
+    "singularName": "tech-tree-decision-point",
+    "pluralName": "tech-tree-decision-points",
+    "displayName": "TechTreeDecisionPoint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "adjacentDecisions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tech-tree-decision-point.tech-tree-decision-point"
+    },
+    "skill": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::skill.skill"
+    },
+    "expCost": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_abilities",
+  "info": {
+    "singularName": "special-ability",
+    "pluralName": "special-abilities",
+    "displayName": "Special Ability",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "battleUses",
+        "discardCard",
+        "divide",
+        "drawCard",
+        "knockoutModifier",
+        "multiply",
+        "lootPercentModifier",
+        "replaceCard",
+        "monsterTaxonomyAssociatedValue",
+        "cardTaxonomyAssociatedValue",
+        "reroll"
+      ]
+    },
+    "value": {
+      "type": "integer",
+      "default": 0
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decks",
+  "info": {
+    "singularName": "deck",
+    "pluralName": "decks",
+    "displayName": "Deck",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playerCards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player-card.player-card"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "selected": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

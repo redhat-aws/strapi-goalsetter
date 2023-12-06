@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decision_points",
+  "info": {
+    "singularName": "decision-point",
+    "pluralName": "decision-points",
+    "displayName": "Decision Point",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quest-event.quest-event"
+    },
+    "flavorText": {
+      "type": "text"
+    },
+    "adjacentDecisions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::decision-point.decision-point"
+    },
+    "name": {
+      "type": "string"
+    },
+    "hintFlavorText": {
+      "type": "text"
+    },
+    "resolutionFlavorText": {
+      "type": "text"
+    },
+    "flavorTextMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hintFlavorTextMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "resolutionFlavorTextMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "biome": {
+      "type": "enumeration",
+      "enum": [
+        "cave",
+        "temple",
+        "dungeon",
+        "crypt"
+      ]
+    },
+    "biomeSubType": {
+      "type": "enumeration",
+      "enum": [
+        "basic",
+        "mini",
+        "boss",
+        "treasure",
+        "trap",
+        "quest"
+      ]
+    },
+    "questDecision": {
+      "type": "boolean"
+    }
+  }
+}

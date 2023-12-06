@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_owned_assets",
+  "info": {
+    "singularName": "user-owned-asset",
+    "pluralName": "user-owned-assets",
+    "displayName": "UserOwnedAsset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "puzzleAssetId": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

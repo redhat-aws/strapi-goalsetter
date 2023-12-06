@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bags",
+  "info": {
+    "singularName": "bag",
+    "pluralName": "bags",
+    "displayName": "bag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playerCards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player-card.player-card"
+    }
+  }
+}

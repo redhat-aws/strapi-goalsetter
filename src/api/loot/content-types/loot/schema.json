@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loots",
+  "info": {
+    "singularName": "loot",
+    "pluralName": "loots",
+    "displayName": "Loot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "crystals": {
+      "type": "json"
+    },
+    "tokens": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "rarity": {
+      "type": "enumeration",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "legendary",
+        "commonboss",
+        "uncommonboss",
+        "rareboss",
+        "legendaryboss"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "card",
+        "cosmetic",
+        "crystal",
+        "relic",
+        "token"
+      ]
+    },
+    "exclusive": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

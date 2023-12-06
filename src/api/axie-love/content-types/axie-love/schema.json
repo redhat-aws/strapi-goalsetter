@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "axie_loves",
+  "info": {
+    "singularName": "axie-love",
+    "pluralName": "axie-loves",
+    "displayName": "AxieLove"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keycloaksubject": {
+      "type": "string"
+    }
+  }
+}

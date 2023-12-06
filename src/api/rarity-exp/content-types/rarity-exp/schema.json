@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rarity_exps",
+  "info": {
+    "singularName": "rarity-exp",
+    "pluralName": "rarity-exps",
+    "displayName": "RarityExp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rarity": {
+      "type": "enumeration",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "legendary",
+        "commonboss",
+        "uncommonboss",
+        "rareboss",
+        "legendaryboss"
+      ]
+    },
+    "exp": {
+      "type": "integer"
+    }
+  }
+}

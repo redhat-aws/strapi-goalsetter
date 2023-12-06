@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "player_quests",
+  "info": {
+    "singularName": "player-quest",
+    "pluralName": "player-quests",
+    "displayName": "PlayerQuest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "completed": {
+      "type": "boolean"
+    },
+    "completedDate": {
+      "type": "datetime"
+    },
+    "quest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quest.quest"
+    },
+    "completedObjectives": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quest-objective.quest-objective"
+    }
+  }
+}

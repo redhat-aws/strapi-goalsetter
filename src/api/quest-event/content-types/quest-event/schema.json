@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quest_events",
+  "info": {
+    "singularName": "quest-event",
+    "pluralName": "quest-events",
+    "displayName": "QuestEvent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomType": {
+      "type": "enumeration",
+      "enum": [
+        "monsterRoom",
+        "treasureRoom",
+        "trapRoom"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "monsterRoom": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::monster-room.monster-room"
+    },
+    "trapRoom": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::trap-room.trap-room"
+    },
+    "treasureRoom": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::treasure-room.treasure-room"
+    }
+  }
+}

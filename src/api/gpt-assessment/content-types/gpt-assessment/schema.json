@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gpt_assessments",
+  "info": {
+    "singularName": "gpt-assessment",
+    "pluralName": "gpt-assessments",
+    "displayName": "GPTAssessment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "assessment": {
+      "type": "text"
+    },
+    "goal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::goal.goal"
+    },
+    "userProfile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-profile.user-profile"
+    },
+    "name": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "datetime"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "customQuestion": {
+      "type": "text"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note"
+    },
+    "tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::task.task"
+    },
+    "completionId": {
+      "type": "string"
+    }
+  }
+}

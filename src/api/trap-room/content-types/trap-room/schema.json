@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trap_rooms",
+  "info": {
+    "singularName": "trap-room",
+    "pluralName": "trap-rooms",
+    "displayName": "Trap Room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "traps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lootRoomType": {
+      "type": "string"
+    }
+  }
+}

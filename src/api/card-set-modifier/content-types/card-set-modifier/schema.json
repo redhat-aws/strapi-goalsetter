@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_set_modifiers",
+  "info": {
+    "singularName": "card-set-modifier",
+    "pluralName": "card-set-modifiers",
+    "displayName": "CardSetModifier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "opposingValue": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "specialAbilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::special-ability.special-ability"
+    }
+  }
+}

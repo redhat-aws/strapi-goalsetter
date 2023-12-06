@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_quests",
+  "info": {
+    "singularName": "room-quest",
+    "pluralName": "room-quests",
+    "displayName": "Room Quest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalRoomCount": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
